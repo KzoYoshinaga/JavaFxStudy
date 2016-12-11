@@ -1,0 +1,22 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="Http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml" fx:controller="fx28_Initialize_Binding_Reuse.Controller">
+
+	<!-- Reusableオブジェクトの宣言 -->
+	<fx:define>
+		<ToggleGroup fx:id="toggleGroup" />
+	</fx:define>
+
+	<Label text="Difficulty" fx:id="label1" />
+	<Label text="${label1.text}" />
+
+	<RadioButton text="Easy" toggleGroup="$toggleGroup" />
+	<RadioButton text="Medium" toggleGroup="$toggleGroup" />
+	<RadioButton text="Hard" toggleGroup="$toggleGroup" />
+
+
+</VBox>
+
+

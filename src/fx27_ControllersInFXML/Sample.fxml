@@ -1,0 +1,13 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="Http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml" fx:controller="fx27_ControllersInFXML.Controller">
+
+	<Label text="I love bacon"/>
+	<Label>
+		<text>Ok this is label</text>
+	</Label>
+	<Button text="Submit" fx:id="button" onAction="#handleButtonClick"/>
+
+</VBox>
